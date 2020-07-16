@@ -1,0 +1,63 @@
+.download {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  .download_wrapper {
+    text-align: center;
+    h3 {
+      @include raleway_500;
+      font-size: 28px;
+      color: #2d3033;
+    }
+    .subtitle {
+      @extend %upper;
+      @include raleway_700;
+      font-size: 13px;
+      color: #2d3033;
+    }
+  }
+  .button_download {
+    @extend %upper;
+    @include raleway_500;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: block;
+    width: 280px;
+    height: 46px;
+    background-color: #e84545;
+    color: #ffffff;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+  }
+  .button:hover {
+    border: 1px solid #ffffff94;
+  }
+}
+
+@media (max-width: 768px) {
+  .download {
+    .download_wrapper {
+      h3 {
+        font-size: 20px;
+        max-width: 350px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .download {
+    .download_wrapper {
+      h3 {
+        font-size: 18px;
+        max-width: 300px;
+      }
+        .subtitle {
+font-size: 10px;
+        }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.page_team {
+  display: grid;
+  grid-template: 1fr/ 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  max-width: 1170px;
+  margin-bottom: 100px;
+
+  .team_item {
+    @include raleway_500;
+    max-width: 270px;
+    margin: 5px;
+    img {
+      max-width: 100%;
+    }
+    h3 {
+      font-size: 22px;
+      color: #2d3033;
+      margin-bottom: 15px;
+    }
+    h4 {
+      @extend %upper;
+      font-size: 13px;
+      color: #e84545;
+    }
+    p {
+      max-width: 270px;
+      color: #6c7279;
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: justify;
+    }
+    .social {
+      display: flex;
+      .social_item {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 5px;
+          width: 40px;
+          height: 40px;
+          border: 1px solid #e8ecee;
+          font-size: 20px;
+          color: #c6cacc;
+        }
+        a:hover {
+          color: #e84545;
+          border: 1px solid #e84545;
+          transition: 0.7s;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .page_team {
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr 1fr;
+    margin: 0 auto;
+    justify-items: center;
+    max-width: 900px;
+    .team_item {
+      max-width: 180px;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .page_team {
+    display: grid;
+    justify-items: center;
+    .team_item {
+      margin-bottom: 50px;
+      max-width: 270px;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .page_team {
+    display: grid;
+    justify-items: center;
+    .team_item {
+      margin-bottom: 50px;
+      max-width: 180px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .page_team {
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr;
+    justify-items: center;
+    .team_item {
+      margin-bottom: 50px;
+      max-width: 270px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .page_team {
+    display: grid;
+    justify-items: center;
+    .team_item {
+      margin-bottom: 50px;
+      max-width: 200px;
+    }
+  }
+}

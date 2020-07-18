@@ -51,4 +51,12 @@ dots.forEach((item, indexDot) => {
 });
 
 // Slider
-
+// Burger menu
+(function () {
+  const burger = document.querySelector(".burger");
+  const menu = document.querySelector(".menu_mobile");
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("burger_active");
+    menu.classList.toggle("menu_active");
+  });
+})();
